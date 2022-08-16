@@ -26,3 +26,7 @@ variable "env" {
 ```hcl
 env = "dev | homolog | prod"
 ```
+
+## Atenção
+* Para cluster ECS, o ASG precisa adicionar a tag **"ecs:cluster-name"** cusjo valor será o nome do cluster ECS
+* Para cluster EKS, o ASG precisa adicionar a tag **"eks:cluster-name"** cusjo valor será o nome do cluster EKS
